@@ -11,7 +11,7 @@
     <title>Oferta Académica | nuevoeidec</title>
 </head>
 <body>
-  <!-- Imagen principal -->
+  <!-- INCIO DIV PRINCIPAL  -->
     <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -26,9 +26,54 @@
     <div class="containerTwo">
         <h1 class="titleTwo">conoce nuestras ofertas académicas</h1>
     </div>
-    <!-- imagen princippal -->
-    
-    <div class="wrapper">
+    <!-- FIN DEL DIV PRINCIPAL -->
+
+    <div class="tabContent">
+      <div class="tabs">
+        <button class="tablink" onclick="openPage('Auditors', this, '#353866')"id="defaultOpen">AUDITORES</button>
+        <button class="tablink" onclick="openPage('Graduates', this, '#353866')" >DIPLOMADOS</button>
+        <button class="tablink" onclick="openPage('Technicians', this, '#353866')">TÉCNICOS</button>
+        <button class="tablink" onclick="openPage('Virtual', this, '#353866')">PREGRADO VIRTUAL</button>
+        <button class="tablink" onclick="openPage('Specializations', this, '#353866')">ESPECIALIZACIONES</button>
+        <button class="tablink" onclick="openPage('Masters', this, '#353866')">MAESTRÍAS</button>
+      </div>
+      
+
+      <div id="Auditors" class="tabcontent">
+        <h3>Home</h3>
+        <p>Home is where the heart is..</p>
+      </div>
+
+      <div id="Graduates" class="tabcontent">
+        <h3>News</h3>
+        <p>Some news this fine day!</p>
+      </div>
+
+      <div id="Technicians" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+      </div>
+
+      <div id="Virtual" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
+      </div>
+
+      <div id="Specializations" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
+      </div>
+
+      <div id="Masters" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
+      </div>
+    </div>
+
+
+
+
+        <!-- <div class="wrapper">
         <div class="tabs">
           <div class="tab">
             <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
@@ -181,7 +226,8 @@
             <label for="tab-6" class="tab-label"><img src="https://eidec.com.mx/wp-content/uploads/2022/11/maestria.png"/> MAESTRÍAS</label>
             <div class="tab-content">When I left Mr. Bates, I went down to my father: where, by the assistance of him and my uncle John, and some other relations, I got forty pounds, and a promise of thirty pounds a year to maintain me at Leyden: there I studied physic two years and seven months, knowing it would be useful in long voyages.</div>
           </div>
-        </div>
+        </div> -->
       </div>
 </body>
+<script src="index.js"></script>
 </html>
