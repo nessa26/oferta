@@ -3,9 +3,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-
 .imgPrincipal{
     height: 534px;
 }
@@ -41,7 +38,6 @@ h3{
     background: #353866;
     background-image: url(data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgwLDAsMCwwLjIpIiBoZWlnaHQ9IjE5NHB4IiB3aWR0aD0iMTEycHgiIHZpZXdCb3g9IjAgMCAxMTIgMTk0IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik01NiwxMjkuMzMsMCw5Nyw1Niw2NC42NywxMTIsOTdaTTU2LDBIMFYzMi4zM1ptNTYsMzIuMzNWMEg1NlpNNTYsMTk0aDU2VjE2MS42N1pNMCwxNjEuNjdWMTk0SDU2WiIvPgoJCQkJCQkJCQkJPHBhdGggZmlsbC1vcGFjaXR5PSIuNSIgZD0iTTU2LDBWNjQuNjdMMCw5N1YzMi4zM1ptMCwxMjkuMzNWMTk0bDU2LTMyLjMzVjk3WiIvPjwvc3ZnPg==);
     background-size: contain;
-    height: 100px;
     align-items: center;
     text-align: center;
     display: flex;
@@ -98,8 +94,7 @@ h3{
     z-index: 1;
     top: -0.0625rem;
   }
-/* Style tab links */
-/* Style the tab content (and add height:100% for full page content) */
+
 .tabcontent {
   color: #2EC4B6;
   display: none;
@@ -107,18 +102,20 @@ h3{
   height: 100%;
 }
 
-/*--- container grid -----*/
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 10px;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .grid-item {
   border: 0px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
   font-size: 30px;
   text-align: center;
+  padding: 20px;
 }
 
 /* -------------------Flip cards------------*/
@@ -170,17 +167,53 @@ img{
   transform: rotateY(180deg);
 }
 
-/*Boton*/
-
-
 .botonm {
-border: 1px solid #353866; /*anchura, estilo y color borde*/
-padding: 10px; /*espacio alrededor texto*/
-background-color: #353866; /*color botón*/
-color: #ffffff; /*color texto*/
-text-decoration: none; /*decoración texto*/
-text-transform: #ffffff; /*capitalización texto*/
-font-family: 'poppins', sans-serif; /*tipografía texto*/
-border-radius: 60px; /*bordes redondos*/
+border: 1px solid #353866; 
+padding: 10px; 
+background-color: #353866; 
+color: #ffffff; 
+text-decoration: none; 
+text-transform: #ffffff; 
+font-family: 'poppins', sans-serif; 
+border-radius: 60px;
 }
-#Auditors, #Graduates, #Technicians, #Virtual,#Specializations,#Masters{background-color: #ffffff;}
+
+#Auditors, #Graduates, #Technicians, #Virtual,#Specializations,#Masters
+{
+  background-color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .tabs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* FOOTER */
+.information{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.h3{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+p{
+  font-size: small;
+}
+.btnTel{
+  background-color: #353866;
+  color: #2EC4B6;
+  border: 2px solid #2EC4B6;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+#telefono{
+  width: 50px;
+  height: 40px;
+}
